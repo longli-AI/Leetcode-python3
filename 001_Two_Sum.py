@@ -11,8 +11,6 @@ class Solution:
                 j = nums.index(num)
                 if i !=j:
                     return [i,j]
-
-
 '''
 Runtime: 1200 ms, faster than 26.50% of Python3 online submissions for Two Sum.
 '''
