@@ -1,2 +1,3 @@
-# Leetcode-Python3
-#### 一条大菜狗的Leetcode之旅
+## 一条大菜狗的Leetcode之旅
+从2018年11月17日开始
+
