@@ -28,4 +28,8 @@ class Solution:
         return output
 '''
 Runtime: 36 ms, faster than 95.52% of Python3 online submissions for Reverse String II.
+
+Note my solution:
+step1: split string into length <= 2*k string list
+step2: implement solutions
 '''
