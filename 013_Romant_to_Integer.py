@@ -1,38 +1,28 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         # create dict for all roman combination
-        dict1 = {'I':1,'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000,'IV' :4, 'IX':9,'XL':40, 'XC':90,'CD':400,'CM':900}
+        sum1 = 0
+        ind = 0
+        dict1 = {'I':1,'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
 
         # split s in correct combination
-        l = len(s)
-        new_list = list()
-        i = 0
-        while i < l:
-            if i + 2 <= l:
-                if s[i:i+2] in dict1.keys():
-                    new_list.append(s[i:i+2])
-                    i = i + 2
-                    pass
-                else:
-                    new_list.append(s[i])
-                    i = i + 1
-                    pass
+        while ind < len(s) - 1:
+            l, r = dict1[s[ind]], dict1[s[ind+1]]
+            if l >= r:
+                sum1 = sum1 + l
+                ind = ind + 1
                 pass
-            if i + 1 == l:
-                new_list.append(s[i])
-                i = i + 1
+            else:
+                sum1 = sum1 + (r - l)
+                ind = ind + 2
                 pass
             pass
-        
-        
-        # sum
-        sum = 0 
-        for x in new_list:
-            sum = sum + dict1[x]
+        if ind == len(s) - 1:
+            sum1 = sum1 + dict1[s[ind]]
             pass
-        return sum
-    
+        return sum1
+            
 '''
-Runtime: 140 ms, faster than 37.57% of Python3 online submissions for Roman to Integer.
-Memory Usage: 13.3 MB, less than 5.05% of Python3 online submissions for Roman to Integer.
+Runtime: 128 ms, faster than 71.19% of Python3 online submissions for Roman to Integer.
+Memory Usage: 13.2 MB, less than 5.05% of Python3 online submissions for Roman to Integer.
 '''
