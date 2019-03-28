@@ -1,5 +1,6 @@
-## Leetcode 之旅
-2018年11月17日开始
-也没啥plan，有空就玩玩
+## A trip of Leetcode
+
+Started since Nov 17, 2018
+No plan, just for fun
 
 
