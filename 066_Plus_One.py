@@ -11,7 +11,6 @@ class Solution:
         new = ''
         for i in digits:
             new = new + str(i)
-        
         new = int(new) + 1
         new = str(new)
         output = []
