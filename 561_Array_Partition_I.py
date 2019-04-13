@@ -13,3 +13,8 @@ Runtime: 120 ms, faster than 22.11% of Python3 online submissions for Array Part
 Memory Usage: 15.1 MB, less than 5.20% of Python3 online submissions for Array Partition I.
 '''
 
+'''
+        return sum(sorted(nums)[::2])
+Runtime: 92 ms, faster than 99.84% of Python3 online submissions for Array Partition I.
+Memory Usage: 15 MB, less than 5.20% of Python3 online submissions for Array Partition I.   
+'''
