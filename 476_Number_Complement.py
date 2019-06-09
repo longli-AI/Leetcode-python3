@@ -12,3 +12,9 @@ class Solution:
 Runtime: 36 ms, faster than 84.85% of Python3 online submissions for Number Complement.
 Memory Usage: 13.2 MB, less than 38.90% of Python3 online submissions for Number Complement.
 '''
+
+
+
+'''
+        return int((''.join(bin(num)))[2::].replace('0', '2').replace('1','0').replace('2','1'), 2)
+'''
